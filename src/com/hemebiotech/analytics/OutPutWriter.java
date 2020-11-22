@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Put Last List into a new File
  */
-public class OutPutWriter {
+public class OutPutWriter  {
 
     private String outFilepath;
 

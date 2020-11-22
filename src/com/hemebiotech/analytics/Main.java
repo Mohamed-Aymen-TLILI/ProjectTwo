@@ -10,7 +10,7 @@ import java.util.Map;
  *  @version 1.0.0
  * Read symptoms from a externe file, calculate their occurency, sort them by alphabetical order and write it to output file.
  */
-public class Main {
+public class Main  {
 
     public static void main(String[] args) throws IOException {
         String filepath = "symptoms.txt";
