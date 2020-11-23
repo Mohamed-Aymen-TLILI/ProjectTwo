@@ -21,7 +21,7 @@ public class CalculateSymptom {
 
 
         //Symptom grouped By Key and Values
-        Map<String, Long> result = new LinkedHashMap<>();
+        Map<String, Long> result =
                 list.stream().collect(
                         Collectors.groupingBy(
                                 Function.identity(), Collectors.counting()

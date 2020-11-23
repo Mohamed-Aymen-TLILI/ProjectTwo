@@ -24,7 +24,8 @@ public class Main  {
         CalculateSymptom sym = new CalculateSymptom();
         Map<String, Long> list = sym.calculateSymptom(results);
 
-        //Put the sorted List into a outputFile
+
+        // Put the sorted List into a outputFile
         OutPutWriter finalResult = new OutPutWriter(outFilepath);
         finalResult.lastFile(list);
 

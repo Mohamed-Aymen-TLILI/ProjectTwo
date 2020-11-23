@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class OutPutWriter  {
 
-    private String outFilepath;
+    private final String outFilepath;
 
 
     /**
