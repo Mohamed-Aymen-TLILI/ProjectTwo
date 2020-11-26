@@ -22,7 +22,7 @@ Afin de réaliser ce projet, j’ai repris le code d’Alex et corrigé sa fonct
 
 Avec la fonction HashMap du Java, j’ai tout d'abord regroupé la liste des symptômes dans une collection avec une paire Key-Value, de manière à regrouper le nombre de chaque symptôme répété en une valeur, et le nom du symptôme comme le Key. J’ai ensuite trié la collection des symptômes et leur nombre d’occurrences dans l’ordre alphabétique en utilisant la fonction HashMap. Enfin, je me suis servi de la fonction FileWriter d’Alex afin d’écrire les symptômes dans un fichier result.out comme cela était demandé dans l’exercice. À l’intérieur de cette fonction, j’ai utilisé une boucle For pour écrire la liste des symptômes sur plusieurs lignes avec le signe « = » en précisant le nombre d’occurrences pour chaque symptôme.
 
-Vous trouverez la correction de la fonction d’Alex dans la class « AnalyticsCounter ».
+Vous trouverez la correction de la fonction d’Alex dans les deux class « AnalyticsCounter »  et « AnalyticsCounterTwo ».
 
 Afin d’adapter mon code à la programmation orientée objet, j'ai utilisé l’interface ISymptomReader et la class ReadSymptomDataFromFile que Caroline a créée pour organiser mon code, et j’ai utilisé le JavaDoc pour aider l’équipe qui reprendra mon travail à comprendre toutes les fonctionnalités de mon projet.
 
@@ -32,4 +32,4 @@ La « CalculateSymptom » s’occupe d’effectuer des calculs et de collecter l
 
 La class « OutPutWriter » permet d’extraire les résultats dans un fichier results.out par ordre alphabétique.
 
-Enfin, j’ai déclaré dans la fonction Main, toutes les fonctions en précisant le nom des deux variables, « filepath » et « outFilepath ».
+Enfin, j’ai déclaré dans la class Main, toutes les fonctions en précisant le nom des deux variables, « filepath » et « outFilepath ».
