@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * @author Mohamed Aymen TLILI
  * @version 1.0.0
  * Correction of Alex's Code
- * Cette classe est une correction du code d'Alex
+ * Cette class est une correction du code d'Alex
  */
 public class AnalyticsCounter {
 
