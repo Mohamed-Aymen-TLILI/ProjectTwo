@@ -44,9 +44,9 @@ public class AnalyticsCounter {
             ).forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));
 
 
-    FileWriter writer = new FileWriter("result.out");
+    FileWriter writer = new FileWriter("result3.out");
     for( Map.Entry<String, Long> entry : finalMap.entrySet()){
-        writer.write( entry.getKey() + " = " + entry.getValue() + "\n" );
+        writer.write( entry.getKey() + " => " + entry.getValue() + "\n" );
     }
     writer.close();
 

@@ -18,11 +18,11 @@ public class Main  {
 
         //Read symptoms and put them into a list
         ReadSymptomDataFromFile readList = new ReadSymptomDataFromFile(filepath);
-        List<String> results = readList.GetSymptoms();
+        List<String> listSymptoms = readList.GetSymptoms();
 
         //Calculate symptoms from the List and sort them by alphabetical order
-        CalculateSymptom sym = new CalculateSymptom();
-        Map<String, Long> list = sym.calculateSymptom(results);
+        CalculateSymptom symptoms = new CalculateSymptom();
+        Map<String, Long> list = symptoms.calculateSymptom(listSymptoms);
 
 
         // Put the sorted List into a outputFile
