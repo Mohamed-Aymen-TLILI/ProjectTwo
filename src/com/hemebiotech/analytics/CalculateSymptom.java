@@ -1,11 +1,10 @@
 package com.hemebiotech.analytics;
 
 
-import java.util.LinkedHashMap;
+
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.TreeMap;
 
 /**
  *
@@ -19,23 +18,12 @@ public class CalculateSymptom {
      */
     public Map<String, Long> calculateSymptom(List<String> list){
 
+        Map<String, Long> result = new TreeMap<>();
 
-        //Symptom grouped By Key and Values
-        Map<String, Long> result = new LinkedHashMap<>();
-                list.stream().collect(
-                        Collectors.groupingBy(
-                                Function.identity(), Collectors.counting()
-                        )
-                );
+        for (String symptom : list) {
+            result.put(symptom, result.containsKey(symptom) ? result.get(symptom) + 1 : 1);
+        }
 
-
-        //Sort a map and add to finalMap
-            Map<String, Long> finalMap = new LinkedHashMap<>();
-
-                result.entrySet().stream()
-                        .sorted(Map.Entry.comparingByKey()
-                                ).forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));
-
-        return finalMap;
+        return result;
     }
 }
